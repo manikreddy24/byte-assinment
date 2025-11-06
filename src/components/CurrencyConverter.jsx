@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:3001';
+const API_BASE_URL = 'https://byte-back-swart.vercel.app/';
 
 function CurrencyConverter() {
   const [amount, setAmount] = useState(100); // Default amount
