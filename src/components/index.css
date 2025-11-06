@@ -1,0 +1,159 @@
+/* Basic Reset and Font */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Main App Container */
+.container {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+
+.container h1 {
+  margin-top: 24px;
+}
+.container p {
+  color: #555;
+  margin-bottom: 24px;
+}
+
+/* Tab Navigation */
+.nav-tabs {
+  display: flex;
+  background-color: #eee;
+}
+
+.nav-tabs button {
+  flex: 1; /* Each button takes equal space */
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #666;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-tabs button:hover {
+  background-color: #e0e0e0;
+}
+
+.nav-tabs button.active {
+  color: #007bff;
+  border-bottom: 3px solid #007bff;
+}
+
+/* Module Content Area */
+.module-content {
+  padding: 24px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Utility classes */
+.loading {
+  font-style: italic;
+  color: #777;
+}
+.error {
+  color: #d9534f;
+  font-weight: 500;
+  background-color: #fdf2f2;
+  border: 1px solid #d9534f;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+/* General Button and Form Styles */
+button {
+  cursor: pointer;
+  padding: 10px 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.2s;
+}
+button:hover {
+  background-color: #0056b3;
+}
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+input[type='number'] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 10px;
+}
+.form-group {
+  margin-bottom: 16px;
+}
+
+/* Specific Module Styles */
+.quote-block {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #444;
+  margin: 20px 0;
+  border-left: 4px solid #007bff;
+  padding-left: 16px;
+}
+.quote-block footer {
+  font-style: normal;
+  font-size: 1rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+.weather-widget .temperature {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #007bff;
+  margin: 8px 0;
+}
+.weather-widget .condition {
+  font-size: 1.2rem;
+  color: #555;
+  text-transform: capitalize;
+}
+
+.currency-converter .results {
+  margin-top: 20px;
+  text-align: left;
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.currency-converter .results p {
+  font-size: 1.1rem;
+  margin: 8px 0;
+  color: #333;
+}
